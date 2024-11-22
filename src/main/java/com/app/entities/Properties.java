@@ -13,7 +13,9 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import ch.qos.logback.core.status.Status;
+import com.app.Enum.Status;
+
+
 
 @Entity
 @Table(name = "properties")
