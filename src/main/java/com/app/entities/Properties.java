@@ -12,10 +12,10 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 import com.app.Enum.Status;
-
-
 
 @Entity
 @Table(name = "properties")
@@ -25,8 +25,13 @@ public class Properties {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
+	@NotBlank(message = "Property Name Cannot Blank")
+	@Size(max = 100, message = "Property name must not exceed with 100 characters")
 	@Column(nullable = false)
 	private String name;
+
+	@NotBlank(message = "Location Name Cannot Blank")
+	@Size(max = 200, message = "Loaction name must not exceed with 200 characters")
 	@Column(nullable = false)
 	private String location;
 
@@ -39,7 +44,7 @@ public class Properties {
 	private BigDecimal price;
 
 	@ManyToOne
-	@JoinColumn(name = "manager_id")
+	@JoinColumn(name = "manager_id", nullable = false)
 	private User manager;
 
 	public Properties() {
