@@ -1,7 +1,8 @@
 package com.app.Enum;
 
 public enum Status {
-	AVAILABLE,
+	AVAILABLE ,
+	Available,
     OCCUPIED,
     UNDER_MAINTENANCE
 }

@@ -9,8 +9,8 @@
         <version>2.7.18</version>
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
-    <groupId>BackendTask</groupId>
-    <artifactId>spring_boot_backend_template</artifactId>
+    <groupId>RealEstatePropertyManagementCRM</groupId>
+    <artifactId>RealEstatePropertyManagementCRM</artifactId>
     <version>0.0.1</version>
     <name>RealEstatePropertyManagementCRM</name>
     <description>Project for Spring Boot based Backend</description>
@@ -73,7 +73,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
+        </dependency> 
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-test</artifactId>
